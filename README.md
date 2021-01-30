@@ -32,3 +32,8 @@ To use these icons in your project, simply copy and paste the SVG sourcecode in 
   />
 </svg>
 ```
+
+## Informations
+
+This repository is hosting the website build with Eleventy, Tailwind CSS and AlpineJS. Everything is hosted on netlify so let's smash this badge in here:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aec52f18-7886-4307-aa1e-cde16042aebb/deploy-status)](https://app.netlify.com/sites/majesticons/deploys)
