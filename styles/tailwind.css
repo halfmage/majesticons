@@ -20,11 +20,11 @@ img.lazy {
 }
 
 .icon-wrapper {
-  @apply grid gap-1 text-center text-xs leading-4 col-start-1 row-start-2 text-primary-800 dark:text-primary-300;
+  @apply grid gap-1 md:gap-4 text-center text-xs leading-4 col-start-1 row-start-2 text-primary-800 dark:text-primary-300;
 }
 
 .icon-container {
-  @apply bg-white dark:bg-primary-900 inline-flex flex-col items-center group p-4 cursor-pointer transition-all;
+  @apply bg-white dark:bg-primary-800 inline-flex rounded-lg flex-col items-center group p-4 cursor-pointer transition-all;
 }
 
 .icon {

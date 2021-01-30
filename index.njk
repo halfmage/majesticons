@@ -8,27 +8,27 @@ layout: default
   id="tab_wrapper"
 >
   <!-- The tabs navigation -->
-  <nav
-    class="sticky top-0 z-10 py-3 bg-white dark:bg-primary-900 mb-2 text-sm shadow-lg"
-  >
-    <div class="container mx-auto px-4 flex items-center justify-between">
+  <nav class="sticky top-0 z-10 container mx-auto px-4">
+    <div
+      class="p-4 bg-white dark:bg-primary-800 shadow-lg -mt-8 flex items-center justify-between rounded-lg mb-4"
+    >
       <span class="flex flex-1"
         ><a
-          class="cursor-pointer flex-1 md:flex-initial transition-all inline-flex justify-center items-center py-2 px-16 rounded bg-primary-100 hover:bg-primary-300 mr-4"
-          :class="{ 'bg-primary-900 text-primary-100 dark:bg-primary-200 dark:text-primary-900 pointer-events-none': tab === 'line' }"
+          class="dark:text-primary-400 flex-1 md:flex-initial cursor-pointer transition-all inline-flex justify-center items-center py-2 px-8 md:px-16 rounded mr-4"
+          :class="{ 'bg-secondary-400 dark:text-primary-900 pointer-events-none': tab === 'line' }"
           @click.prevent="tab = 'line'; window.location.hash = 'line'"
           >{{ "/icons/line/badge-check.svg" | svgContents("mr-2") | safe }}
           Line</a
         >
         <a
-          class="cursor-pointer flex-1 md:flex-initial transition-all inline-flex justify-center items-center py-2 px-16 rounded bg-primary-100 hover:bg-primary-300"
-          :class="{ 'bg-primary-900 text-primary-100 dark:bg-primary-200 dark:text-primary-900 pointer-events-none': tab === 'solid' }"
+          class="dark:text-primary-400 flex-1 md:flex-initial cursor-pointer transition-all inline-flex justify-center items-center py-2 px-8 md:px-16 rounded"
+          :class="{ 'bg-secondary-400 dark:text-primary-900 pointer-events-none': tab === 'solid' }"
           @click.prevent="tab = 'solid'; window.location.hash = 'solid'"
           >{{ "/icons/solid/badge-check.svg" | svgContents("mr-2") | safe }}
           Solid</a
         ></span
       >
-      <span class="opacity-50 hidden md:block"
+      <span class="text-primary-500 hidden md:block"
         >More styles are coming soon 🎉</span
       >
     </div>
