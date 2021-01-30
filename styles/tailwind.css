@@ -19,16 +19,12 @@ img.lazy {
   height: auto;
 }
 
+.icon-wrapper {
+  @apply grid gap-1 text-center text-xs leading-4 col-start-1 row-start-2 text-primary-800 dark:text-primary-300;
+}
+
 .icon-container {
-  @apply bg-white rounded-lg inline-flex flex-col items-center group p-4 cursor-pointer text-primary-700 hover:text-gray-900 transition-all;
-}
-
-.icon-container:active {
-  transform: scale(0.85);
-}
-
-.icon-container:focus {
-  background-color: red;
+  @apply bg-white dark:bg-primary-900 inline-flex flex-col items-center group p-4 cursor-pointer transition-all;
 }
 
 .icon {
@@ -52,5 +48,5 @@ img.lazy {
 }
 
 /* .copy-button {
-  @apply bg-gray-700 text-white py-1 px-6 -mt-6 border-0 hover:bg-gray-900 opacity-0;
+  @apply bg-primary-700 text-white py-1 px-6 -mt-6 border-0 hover:bg-primary-900 opacity-0;
 }*/

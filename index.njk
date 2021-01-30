@@ -1,38 +1,42 @@
 ---
-title: Startseite
-description: Test
 layout: default
 ---
 
 <div
-  class="container mx-auto mb-4 -mt-8 text-center px-6"
+  class="text-center"
   x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'line' }"
   id="tab_wrapper"
 >
   <!-- The tabs navigation -->
-  <nav class="sticky top-2 z-10 py-4 bg-white shadow-lg rounded-lg text-sm">
-    <a
-      class="transition-all border-2 font-semibold px-8 py-1.5 rounded-lg inline-flex items-center bg-gray-100 text-primary-500 mr-4"
-      :class="{ 'active border-gray-900 bg-white text-primary-900 font-bold': tab === 'line' }"
-      @click.prevent="tab = 'line'; window.location.hash = 'line'"
-      href="#"
-      >{{ "/icons/line/dashboard.svg" | svgContents("mr-2") | safe }} Line</a
-    >
-    <a
-      class="transition-all border-2 font-semibold px-8 py-1.5 rounded-lg inline-flex items-center bg-gray-100 text-primary-500"
-      :class="{ 'active border-gray-900 bg-white text-primary-900 font-bold': tab === 'solid' }"
-      @click.prevent="tab = 'solid'; window.location.hash = 'solid'"
-      href="#"
-      >{{ "/icons/solid/dashboard.svg" | svgContents("mr-2") | safe }} Solid</a
-    >
+  <nav
+    class="sticky top-0 z-10 py-3 bg-white dark:bg-primary-900 mb-2 text-sm shadow-lg"
+  >
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <span class="flex flex-1"
+        ><a
+          class="cursor-pointer flex-1 md:flex-initial transition-all inline-flex justify-center items-center py-2 px-16 rounded bg-primary-100 hover:bg-primary-300 mr-4"
+          :class="{ 'bg-primary-900 text-primary-100 dark:bg-primary-200 dark:text-primary-900 pointer-events-none': tab === 'line' }"
+          @click.prevent="tab = 'line'; window.location.hash = 'line'"
+          >{{ "/icons/line/badge-check.svg" | svgContents("mr-2") | safe }}
+          Line</a
+        >
+        <a
+          class="cursor-pointer flex-1 md:flex-initial transition-all inline-flex justify-center items-center py-2 px-16 rounded bg-primary-100 hover:bg-primary-300"
+          :class="{ 'bg-primary-900 text-primary-100 dark:bg-primary-200 dark:text-primary-900 pointer-events-none': tab === 'solid' }"
+          @click.prevent="tab = 'solid'; window.location.hash = 'solid'"
+          >{{ "/icons/solid/badge-check.svg" | svgContents("mr-2") | safe }}
+          Solid</a
+        ></span
+      >
+      <span class="opacity-50 hidden md:block"
+        >More styles are coming soon 🎉</span
+      >
+    </div>
   </nav>
 
   <!-- The tabs content -->
-  <div x-show="tab === 'line'">
-    <div class="py-4">{% include "line-icons.njk" %}</div>
-  </div>
-
-  <div x-show="tab === 'solid'">
-    <div class="py-4">{% include "solid-icons.njk" %}</div>
+  <div class="container mx-auto px-4">
+    <div x-show="tab === 'line'">{% include "line-icons.njk" %}</div>
+    <div x-show="tab === 'solid'">{% include "solid-icons.njk" %}</div>
   </div>
 </div>

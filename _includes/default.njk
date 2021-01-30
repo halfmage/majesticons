@@ -43,7 +43,7 @@
     <!-- End Cookie Consent by https://www.CookieConsent.com -->
 
     <meta charset="UTF-8" />
-    <title>{{ title }} - {{ meta.title }}</title>
+    <title>{{ meta.title }}</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
       name="viewport"
@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="/style.css?v={% version %}" />
     <script src="/js/alpine.js?v={% version %}"></script>
   </head>
-  <body class="font-sans bg-primary-100">
+  <body class="font-sans bg-primary-100 dark:bg-primary-700">
     {% include "header.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}

@@ -11,10 +11,9 @@ module.exports = {
   },
   theme: {
     colors: {
-      gray: colors.warmGray,
+      white: white,
       primary: colors.coolGray,
       secondary: colors.yellow,
-      white: white,
     },
   },
   variants: {
