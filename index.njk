@@ -1,0 +1,38 @@
+---
+title: Startseite
+description: Test
+layout: default
+---
+
+<div
+  class="container mx-auto mb-4 -mt-8 text-center px-6"
+  x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'line' }"
+  id="tab_wrapper"
+>
+  <!-- The tabs navigation -->
+  <nav class="sticky top-2 z-10 py-4 bg-white shadow-lg rounded-lg text-sm">
+    <a
+      class="transition-all border-2 font-semibold px-8 py-1.5 rounded-lg inline-flex items-center bg-gray-100 text-primary-500 mr-4"
+      :class="{ 'active border-gray-900 bg-white text-primary-900 font-bold': tab === 'line' }"
+      @click.prevent="tab = 'line'; window.location.hash = 'line'"
+      href="#"
+      >{{ "/icons/line/dashboard.svg" | svgContents("mr-2") | safe }} Line</a
+    >
+    <a
+      class="transition-all border-2 font-semibold px-8 py-1.5 rounded-lg inline-flex items-center bg-gray-100 text-primary-500"
+      :class="{ 'active border-gray-900 bg-white text-primary-900 font-bold': tab === 'solid' }"
+      @click.prevent="tab = 'solid'; window.location.hash = 'solid'"
+      href="#"
+      >{{ "/icons/solid/dashboard.svg" | svgContents("mr-2") | safe }} Solid</a
+    >
+  </nav>
+
+  <!-- The tabs content -->
+  <div x-show="tab === 'line'">
+    <div class="py-4">{% include "line-icons.njk" %}</div>
+  </div>
+
+  <div x-show="tab === 'solid'">
+    <div class="py-4">{% include "solid-icons.njk" %}</div>
+  </div>
+</div>

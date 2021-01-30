@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .white {
+    color: white;
+  }
+}
+
+a[href^="http"] {
+  word-break: break-all;
+}
+
+img.lazy {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-container {
+  @apply bg-white rounded-lg inline-flex flex-col items-center group p-4 cursor-pointer text-primary-700 hover:text-gray-900 transition-all;
+}
+
+.icon-container:active {
+  transform: scale(0.85);
+}
+
+.icon-container:focus {
+  background-color: red;
+}
+
+.icon {
+  @apply w-6 h-6;
+}
+
+.icon-code {
+  @apply sr-only;
+}
+
+.icon-name {
+  @apply truncate overflow-ellipsis;
+}
+
+.icon-name .name {
+  @apply block;
+}
+
+.icon-name .copy {
+  @apply hidden font-bold;
+}
+
+/* .copy-button {
+  @apply bg-gray-700 text-white py-1 px-6 -mt-6 border-0 hover:bg-gray-900 opacity-0;
+}*/

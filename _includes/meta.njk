@@ -1,0 +1,41 @@
+<meta name="description" content="{{ description or meta.description }}" />
+<link rel="canonical" href="{{ meta.url }}" />
+
+<meta property="og:site_name" content="{{ meta.title }}" />
+<meta property="og:title" content="{{ meta.title }} - {{ title }}" />
+<meta
+  property="og:description"
+  content="{{ renderData.description or description or meta.description }}"
+/>
+<meta property="og:url" content="{{ meta.url }}" />
+<meta property="og:locale" content="{{ meta.locale }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ meta.url }}/social.png" />
+<meta
+  property="og:image:width"
+  content="{{ renderData.socialImageWidth or 640 }}"
+/>
+<meta
+  property="og:image:height"
+  content="{{ renderData.socialImageHeight or 640 }}"
+/>
+
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="images/favicon/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="images/favicon/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="images/favicon/favicon-16x16.png"
+/>
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#ffffff" />

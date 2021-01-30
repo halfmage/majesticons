@@ -1,0 +1,37 @@
+<div
+  class="bg-gradient-to-r from-primary-900 to-primary-700 md:py-16 py-12 text-center md:text-left"
+>
+  <div class="container mx-auto px-6 md:flex justify-between">
+    <div class="flex flex-col">
+      <h1 class="text-4xl font-bold text-white mb-4">
+        <span class="text-secondary-400">{{meta.title}}
+      </h1>
+      <p class="text-primary-300 font-semibold mb-4 md:mb-0">
+        {{ meta.description }}
+      </p>
+    </div>
+
+    <div class="md:flex text-sm items-center">
+      <div
+        class="flex md:inline-flex mx-4 my-2 items-center justify-center px-3 py-2 bg-secondary-400 rounded group hover:bg-secondary-500 transition-colors cursor-pointer"
+      >
+        {{ "/icons/line/save.svg" | svgContents("w-6 h-6 text-primary-900 group-hover:text-primary-800") | safe }}
+        <span
+          class="text-primary-900 ml-2 group-hover:text-primary-800 font-semibold whitespace-nowrap"
+          >Download all (SVG)</span
+        >
+      </div>
+      <div class="flex mx-4 md:mx-0">
+        <div
+          class="inline-flex flex-1 my-2 items-center justify-center px-3 py-2 bg-primary-900 rounded group hover:bg-primary-100 transition-colors cursor-pointer"
+        >
+          {{ "/icons/line/light-bulb.svg" | svgContents("w-6 h-6 text-primary-300 group-hover:text-primary-800") | safe }}
+          <span
+            class="text-primary-300 ml-2 group-hover:text-primary-800 font-semibold whitespace-nowrap"
+            >Contribute on Github</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

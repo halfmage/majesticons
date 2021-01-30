@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title }} - {{ meta.title }}</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    />
+    {% include "meta.njk" %}
+    <link rel="stylesheet" href="/style.css?v={% version %}" />
+    <script src="/js/alpine.js?v={% version %}"></script>
+  </head>
+  <body class="font-sans bg-primary-100">
+    {% include "header.njk" %}
+    {{ content | safe }}
+    {% include "footer.njk" %}
+
+    <script type="module" async>
+      import Lazyload from "https://cdn.skypack.dev/vanilla-lazyload";
+      const lazyload = new Lazyload();
+    </script>
+
+    <script src="/js/clipboard.js"></script>
+    <script>
+      new ClipboardJS(".icon-container", {
+        text: function (trigger) {
+          return trigger.getAttribute("aria-label");
+        },
+      });
+      var clipboard = new ClipboardJS(".icon-container");
+    </script>
+  </body>
+</html>
