@@ -4,6 +4,8 @@ A versitile, beautiful and scalable iconset. 210 icons each in line and solid.
 
 Majesticons is a high-quality SVG iconset which you can use for your web projects, your application or print them to hang them on your wall! All icons of this set are MIT-licensed and reusable as you like.
 
+## Preview of all 420 icons (line and solid style)
+
 ![Preview of all icons](https://github.com/halfmage/majesticons/blob/main/preview-both.png)
 
 ## Some facts for you
