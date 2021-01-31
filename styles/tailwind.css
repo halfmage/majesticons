@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .white {
-    color: white;
-  }
-}
-
-a[href^="http"] {
-  word-break: break-all;
-}
-
 img.lazy {
   display: block;
   width: 100%;
@@ -47,6 +37,46 @@ img.lazy {
   @apply hidden font-bold;
 }
 
-/* .copy-button {
-  @apply bg-primary-700 text-white py-1 px-6 -mt-6 border-0 hover:bg-primary-900 opacity-0;
-}*/
+/* Cookie consent banner styles */
+
+.cc_dialog.simple {
+  max-width: 100%;
+  padding: 2rem;
+  @apply bg-primary-700 rounded-t-2xl md:rounded-tr-none;
+}
+
+.dark.cc_dialog .cc_dialog_headline {
+  @apply text-primary-100;
+}
+
+.dark.cc_dialog .cc_dialog_text {
+  @apply text-primary-300 text-sm;
+}
+
+.cc_dialog_headline + div + div {
+  display: flex;
+}
+
+.dark.cc_dialog button.cc_b_ok {
+  @apply flex-1 bg-secondary-400 text-primary-900;
+}
+
+.dark.cc_dialog button.cc_b_cp {
+  @apply flex-1 bg-primary-800 text-primary-300 whitespace-nowrap;
+}
+
+@media (min-width: 768px) {
+  .cc_dialog.simple {
+    max-width: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  .cc_dialog.simple {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .cc_dialog.simple {
+    max-width: 30%;
+  }
+}
