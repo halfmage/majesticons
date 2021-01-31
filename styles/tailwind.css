@@ -14,7 +14,7 @@ img.lazy {
 }
 
 .icon-container {
-  @apply bg-white dark:bg-primary-800 inline-flex rounded-lg flex-col items-center group p-4 cursor-pointer transition-all;
+  @apply relative bg-white dark:bg-primary-800 inline-flex rounded-lg flex-col items-center group py-6 px-4;
 }
 
 .icon {
@@ -29,15 +29,13 @@ img.lazy {
   @apply truncate overflow-ellipsis;
 }
 
-.icon-name .name {
-  @apply block;
+.icon-copy-trigger {
+  @apply opacity-0 bg-secondary-400 hover:bg-secondary-300 text-primary-900 absolute bottom-3 py-2 px-6 font-bold rounded-full cursor-pointer;
 }
 
-.icon-name .copy {
-  @apply hidden font-bold;
-}
-
-/* Cookie consent banner styles */
+/* =============================
+  Cookie consent banner styles
+============================= */
 
 .cc_dialog.simple {
   max-width: 100%;

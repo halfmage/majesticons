@@ -65,12 +65,18 @@
 
     <script src="/js/clipboard.js"></script>
     <script>
-      new ClipboardJS(".icon-container", {
-        text: function (trigger) {
-          return trigger.getAttribute("aria-label");
-        },
+      var clipboard = new ClipboardJS(".icon-copy-trigger");
+
+      clipboard.on("success", function (event) {
+        console.info("Action:", event.action);
+        console.info("Text:", event.text);
+        console.info("Trigger:", event.trigger);
+        event.clearSelection();
+        event.trigger.textContent = "Copied! 🎉";
+        window.setTimeout(function () {
+          event.trigger.textContent = "Copy SVG";
+        }, 1500);
       });
-      var clipboard = new ClipboardJS(".icon-container");
     </script>
   </body>
 </html>
