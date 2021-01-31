@@ -1,8 +1,8 @@
 # Majesticons
 
-A versitile, beautiful and scalable iconset. 210 icons each in line and solid.
+A versatile, beautiful, and scalable iconset. 210 icons each inline and solid.
 
-Majesticons is a high-quality SVG iconset which you can use for your web projects, your application or print them to hang them on your wall! All icons of this set are MIT-licensed and reusable as you like.
+Majesticons is a high-quality SVG iconset that you can use for your web projects, your application, or print them to hang them on your wall! All icons of this set are MIT-licensed and reusable as you like
 
 ## Preview of all 420 icons (line and solid style)
 
@@ -12,12 +12,18 @@ Majesticons is a high-quality SVG iconset which you can use for your web project
 
 All icons are ...
 
-- designed to be used in a viarity of topics
+- designed to be used in a variety of topics
 - made with a basic 24x24 pixel grid
 - build with strokes (line-version)
 - optimized with SVGO
 
 ## Usage
+
+You can find the icons for your needs, wether it is design or code here:
+
+> **_Majesticons Design:_** <br> [Majesticons Community Figma File](https://www.figma.com/community/file/937658831428627854/Majesticons).
+
+> **_Majesticons Code:_** <br> [Majesticons SVG Icons](https://github.com/halfmage/majesticons/tree/main/icons).
 
 To use these icons in your project, simply copy and paste the SVG sourcecode in your HTML:
 
@@ -35,5 +41,5 @@ To use these icons in your project, simply copy and paste the SVG sourcecode in 
 
 ## Informations
 
-This repository is hosting the website build with Eleventy, Tailwind CSS and AlpineJS. Everything is hosted on netlify so let's smash this badge in here:
+This repository is hosting the website build with Eleventy, Tailwind CSS, and AlpineJS. Everything is hosted on netlify so let's smash this badge in here:
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aec52f18-7886-4307-aa1e-cde16042aebb/deploy-status)](https://app.netlify.com/sites/majesticons/deploys)
