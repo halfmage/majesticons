@@ -4,13 +4,13 @@ A versatile, beautiful, and scalable iconset. 210 icons each inline and solid.
 
 Majesticons is a high-quality SVG iconset that you can use for your web projects, your application, or print them to hang them on your wall! All icons of this set are MIT-licensed and reusable as you like
 
-### **Design**: [Majesticons Community Figma File](https://www.figma.com/community/file/937658831428627854/Majesticons)
+## **🎨 Design**: [Majesticons Community Figma File](https://www.figma.com/community/file/937658831428627854/Majesticons)
 
-### **Code**: [Majesticons SVG Icons Github](https://github.com/halfmage/majesticons/tree/main/icons)
+## **📚 SVG Code**: [Majesticons SVG Icons Github](https://github.com/halfmage/majesticons/tree/main/icons)
 
 ---
 
-## Preview of all 420 icons (line and solid style)
+## Preview (line and solid style)
 
 ![Preview of all icons](https://github.com/halfmage/majesticons/blob/main/preview-both.png)
 
@@ -31,7 +31,7 @@ To use these icons in your project, simply copy and paste the SVG sourcecode in 
 <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path
     d="M7 8h10M7 12h5m4.8..."   // vector path
-    stroke="currentColor"       // currentColor for easy coloring
+    stroke="currentColor"       // easy coloring with css color
     stroke-width="2"            // default stroke width
     stroke-linecap="round"      // default line cap
     stroke-linejoin="round"     // default line join
