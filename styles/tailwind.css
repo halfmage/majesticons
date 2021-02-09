@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-img.lazy {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+html.light .theme-sun,
+html.dark .theme-moon {
+  display: none;
 }
 
 .icon-wrapper {
@@ -26,55 +24,9 @@ img.lazy {
 }
 
 .icon-name {
-  @apply truncate overflow-ellipsis;
+  @apply truncate text-primary-500;
 }
 
 .icon-copy-trigger {
   @apply opacity-0 bg-secondary-400 hover:bg-secondary-300 text-primary-900 absolute bottom-3 py-2 px-6 font-bold rounded-full cursor-pointer;
-}
-
-/* =============================
-  Cookie consent banner styles
-============================= */
-
-.cc_dialog.simple {
-  max-width: 100%;
-  padding: 2rem;
-  @apply bg-primary-700 rounded-t-2xl md:rounded-tr-none;
-}
-
-.dark.cc_dialog .cc_dialog_headline {
-  @apply text-primary-100;
-}
-
-.dark.cc_dialog .cc_dialog_text {
-  @apply text-primary-300 text-sm;
-}
-
-.cc_dialog_headline + div + div {
-  display: flex;
-}
-
-.dark.cc_dialog button.cc_b_ok {
-  @apply flex-1 bg-secondary-400 text-primary-900;
-}
-
-.dark.cc_dialog button.cc_b_cp {
-  @apply flex-1 bg-primary-800 text-primary-300 whitespace-nowrap;
-}
-
-@media (min-width: 768px) {
-  .cc_dialog.simple {
-    max-width: 75%;
-  }
-}
-@media (min-width: 1024px) {
-  .cc_dialog.simple {
-    max-width: 50%;
-  }
-}
-@media (min-width: 1280px) {
-  .cc_dialog.simple {
-    max-width: 30%;
-  }
 }

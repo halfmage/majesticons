@@ -2,7 +2,7 @@
   class="bg-gradient-to-r from-primary-900 to-primary-700 dark:from-primary-900 dark:to-primary-900 md:py-16 md:pb-24 py-8 pb-16 text-center md:text-left"
 >
   <div class="container mx-auto px-4 md:flex justify-between">
-    <div class="flex flex-col">
+    <div class="flex flex-col md:pr-16">
       <h1 class="text-4xl font-bold tracking-wide text-secondary-400">
         <a href="/">{{ meta.title }}</a>
       </h1>
@@ -15,7 +15,7 @@
           href="https://github.com/halfmage/majesticons/blob/main/LICENSE"
           target="_blank"
         >
-          {{ "/icons/line/thumb-up.svg" | svgContents("mr-2") | safe }}
+          {{ "/icons/line/thumb-up.svg" | svgContents("mr-2 w-6 h-6") | safe }}
           MIT Licensed</a
         >
         <a
@@ -23,13 +23,53 @@
           href="https://github.com/halfmage/majesticons#readme"
           target="_blank"
         >
-          {{ "/icons/line/book-open.svg" | svgContents("mr-2") | safe
+          {{ "/icons/line/book-open.svg" | svgContents("mr-2 w-6 h-6") | safe
+
+
+
+
           }}Readme</a
         >
       </p>
     </div>
 
     <div class="md:flex text-sm items-center">
+      <div
+        class="inline-flex flex-1 my-2 items-center justify-center px-3 py-2 transition-colors cursor-pointer rounded bg-primary-200 text-primary-900 hover:bg-primary-100 mx-2"
+      >
+        <button onclick="toggleDefaultTheme()" class="theme-sun">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 3v1m0 16v1m8-9h1M4 12H3m2-7l1 1m12 0l1-1m0 14l-1-1M6 18l-1 1m11-7a4 4 0 11-8 0 4 4 0 018 0z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button onclick="toggleSecondTheme()" class="theme-moon">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0012.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
       <a
         href="https://www.figma.com/community/file/937658831428627854/Majesticons"
         target="_blank"

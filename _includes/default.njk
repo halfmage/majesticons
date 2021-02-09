@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="light">
   <head>
     <meta charset="UTF-8" />
     <title>{{ meta.title }}</title>
@@ -36,6 +36,35 @@
           event.trigger.textContent = "Copy SVG";
         }, 1500);
       });
+    </script>
+    <script>
+      // Set a given theme/color-scheme
+      function setTheme(themeName) {
+        localStorage.setItem("theme", themeName);
+        document.documentElement.className = themeName;
+      }
+
+      // Toggle between color themes
+      function toggleDefaultTheme() {
+        if (localStorage.getItem("theme") !== "light") {
+          setTheme("light");
+        }
+      }
+      function toggleSecondTheme() {
+        if (localStorage.getItem("theme") !== "dark") {
+          setTheme("dark");
+        }
+      }
+
+      // Immediately set the theme on initial load
+      (function () {
+        if (localStorage.getItem("theme") === "light") {
+          setTheme("light");
+        }
+        if (localStorage.getItem("theme") === "dark") {
+          setTheme("dark");
+        }
+      })();
     </script>
   </body>
 </html>
