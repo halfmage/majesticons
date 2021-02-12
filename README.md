@@ -27,7 +27,7 @@ All icons are ...
 
 To use these icons in your project, simply copy and paste the SVG sourcecode in your HTML:
 
-```scss
+```html
 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path
     d="M7 8h10M7 12h5m4.8..."   // vector path
