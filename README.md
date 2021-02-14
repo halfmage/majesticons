@@ -29,15 +29,16 @@ To use these icons in your project, simply copy and paste the SVG sourcecode in 
 
 ```html
 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M7 8h10M7 12h5m4.8..."   // vector path
-    stroke="currentColor"       // easy coloring with css color
-    stroke-width="2"            // default stroke width
-    stroke-linecap="round"      // default line cap
-    stroke-linejoin="round"     // default line join
-  />
+  <path d="M7 8h10M7 12h5m4.8..." // vector path stroke="currentColor" // easy
+  coloring with css color stroke-width="2" // default stroke width
+  stroke-linecap="round" // default line cap stroke-linejoin="round" // default
+  line join />
 </svg>
 ```
+
+# Constribute
+
+Let me know if you use majesticons, I would like to prepare a showcase section on the website! If you run in any errors or have suggestion, please let me know via email or create a github issue 👋
 
 ## Informations
 
