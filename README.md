@@ -36,7 +36,7 @@ To use these icons in your project, simply copy and paste the SVG sourcecode in 
 </svg>
 ```
 
-# Constribute
+# Contribute
 
 Let me know if you use majesticons, I would like to prepare a showcase section on the website! If you run in any errors or have suggestion, please let me know via email or create a github issue 👋
 
