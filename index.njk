@@ -46,13 +46,13 @@ layout: default
           <div class="mb-5">
             {{ icon.sourceWithClass | safe }}
           </div>
-          <div class="icon-code" id="{{ icon.nameWithoutExtension }}">
+          <div class="icon-code" id="{{ icon.nameWithoutExtension }}-line">
             {{ icon.source }}
           </div>
           <div class="icon-name">{{ icon.nameWithoutExtension }}</div>
           <div
             class="icon-copy-trigger group-hover:opacity-100"
-            data-clipboard-target="#{{ icon.nameWithoutExtension }}"
+            data-clipboard-target="#{{ icon.nameWithoutExtension }}-line"
           >
             Copy SVG
           </div>
