@@ -12,7 +12,7 @@ html.dark .theme-moon {
 }
 
 .icon-container {
-  @apply relative bg-white dark:bg-primary-800 inline-flex rounded-lg flex-col items-center group py-6 px-4;
+  @apply relative bg-white dark:bg-primary-800 inline-flex rounded-lg flex-col items-center group py-4 px-4;
 }
 
 .icon {
@@ -24,9 +24,9 @@ html.dark .theme-moon {
 }
 
 .icon-name {
-  @apply truncate text-primary-500;
+  @apply truncate text-primary-500 w-full;
 }
 
 .icon-copy-trigger {
-  @apply opacity-0 bg-secondary-400 hover:bg-secondary-300 text-primary-900 absolute bottom-3 py-2 px-6 font-bold rounded-full cursor-pointer;
+  @apply opacity-0 bg-secondary-400 hover:bg-secondary-300 text-primary-900 absolute bottom-3 py-2 px-4 font-bold rounded-full cursor-pointer;
 }

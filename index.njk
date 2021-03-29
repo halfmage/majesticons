@@ -29,7 +29,7 @@ layout: default
         ></span
       >
       <span class="text-primary-600 dark:text-primary-300 hidden md:block"
-        >Click the icon name to copy the SVG code</span
+        >Copy individual icon svg code</span
       >
     </div>
   </nav>
@@ -43,7 +43,7 @@ layout: default
       >
         {% for icon in iconsLine %}
         <div class="icon-container">
-          <div class="mb-5">
+          <div class="mb-4">
             {{ icon.sourceWithClass | safe }}
           </div>
           <div class="icon-code" id="{{ icon.nameWithoutExtension }}-line">
@@ -67,7 +67,7 @@ layout: default
       >
         {% for icon in iconsSolid %}
         <div class="icon-container">
-          <div class="mb-5">
+          <div class="mb-4">
             {{ icon.sourceWithClass | safe }}
           </div>
           <div class="icon-code" id="{{ icon.nameWithoutExtension }}-solid">
