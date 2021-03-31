@@ -8,7 +8,7 @@ html.dark .theme-moon {
 }
 
 .icon-wrapper {
-  @apply grid gap-1 md:gap-4 text-center text-xs leading-4 col-start-1 row-start-2 text-primary-800 dark:text-primary-300;
+  @apply grid gap-1 md:gap-4 text-center text-xs leading-4 col-start-1 row-start-2 text-primary-700 dark:text-primary-200;
 }
 
 .icon-container {
