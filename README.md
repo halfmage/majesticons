@@ -1,4 +1,6 @@
-# Majesticons
+# Majesticons V2
+
+> **Second version of majesticons will introduce a lot more icons and many variants of icons from the current set!**
 
 A versatile, beautiful, and scalable iconset. 210 icons each inline and solid.
 
