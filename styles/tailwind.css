@@ -16,7 +16,7 @@ html.dark .theme-moon {
 }
 
 .icon {
-  @apply w-6 md:w-8 h-6 md:h-8;
+  @apply w-12 h-12;
 }
 
 .icon-code {
