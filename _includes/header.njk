@@ -1,58 +1,30 @@
-<div
-  class="bg-gradient-to-r from-primary-200 to-primary-400 dark:from-primary-800 dark:to-primary-900 py-8 text-center md:text-left mb-4"
->
-  <div class="container mx-auto px-4 md:flex justify-between">
-    <div class="flex flex-col md:pr-16">
-      <h1 class="text-4xl font-bold tracking-wide text-primary-900 dark:text-secondary-400">
-        <a href="/">{{ meta.title }}</a>
-      </h1>
-      <p class="text-primary-700 dark:text-primary-400 text-lg my-4">
-        {{ meta.description }}
-      </p>
-      <p class="text-primary-700 dark:text-primary-300">
-        <a class="inline-flex items-center mr-6 hover:underline" href="https://github.com/halfmage/majesticons/blob/main/LICENSE" target="_blank">
-          MIT Licensed
-        </a>
-        <a class="inline-flex items-center hover:underline" href="https://github.com/halfmage/majesticons#readme" target="_blank">
-          Readme
-        </a>
-      </p>
-    </div>
+<div class="py-8 container mx-auto text-center px-4 flex flex-col items-center">
+    <h1 class="text-6xl font-extrabold tracking-tight">
+      <a href="/">{{ meta.title }}</a>
+    </h1>
+    <p class="text-lg mt-4 mb-3">
+      An <a class="hover:underline" href="https://github.com/halfmage/majesticons/blob/main/LICENSE" target="_blank">MIT-licensed</a>
+      majestic icon-set made by <a class="hover:underline" href="https://github.com/halfmage/majesticons/blob/main/LICENSE" target="_blank">@halfmage</a>.
+    </p>
 
-    <div class="md:flex text-sm items-center">
-      <!-- theme switcher start -->
-      <div class="inline-flex flex-1 my-2 items-center justify-center px-3 py-2 transition-colors cursor-pointer rounded bg-primary-200 text-primary-900 hover:bg-primary-100 mx-2">
-        <button onclick="toggleDefaultTheme()" class="theme-sun">
-          <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3v1m0 16v1m8-9h1M4 12H3m2-7l1 1m12 0l1-1m0 14l-1-1M6 18l-1 1m11-7a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-        <button onclick="toggleSecondTheme()" class="theme-moon">
-          <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0012.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
-      <!-- theme switcher end -->
+  <div class="flex text-sm items-center">
+    <!-- figma button start -->
+    <a href="https://www.figma.com/community/file/937658831428627854/Majesticons" target="_blank" class="inline-flex flex-1 my-2 items-center justify-center px-3 py-2 transition-colors cursor-pointer rounded border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 hover:border-gray-400 mx-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6">
+        <path fill="currentColor" fill-rule="evenodd" d="M5 6a4 4 0 014-4h6a4 4 0 012.6 7 4 4 0 01-4.6 6.5V18a4 4 0 11-6.6-3 4 4 0 010-6A4 4 0 015 6zm4 8h2v-4H9a2 2 0 100 4zm2 2H9a2 2 0 102 2v-2zm6-10a2 2 0 01-2 2h-2V4h2a2 2 0 012 2zm-2 4a2 2 0 100 4 2 2 0 000-4zm-4-6H9a2 2 0 100 4h2V4z" clip-rule="evenodd"/>
+      </svg>
+      <span class="ml-2 font-semibold whitespace-nowrap">Open in Figma</span>
+    </a>
+    <!-- figma button end -->
 
-      <!-- figma button start -->
-      <a href="https://www.figma.com/community/file/937658831428627854/Majesticons" target="_blank" class="inline-flex flex-1 my-2 items-center justify-center px-3 py-2 transition-colors cursor-pointer rounded bg-primary-200 text-primary-900 hover:bg-primary-100 mx-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6">
-          <path fill="currentColor" fill-rule="evenodd" d="M5 6a4 4 0 014-4h6a4 4 0 012.6 7 4 4 0 01-4.6 6.5V18a4 4 0 11-6.6-3 4 4 0 010-6A4 4 0 015 6zm4 8h2v-4H9a2 2 0 100 4zm2 2H9a2 2 0 102 2v-2zm6-10a2 2 0 01-2 2h-2V4h2a2 2 0 012 2zm-2 4a2 2 0 100 4 2 2 0 000-4zm-4-6H9a2 2 0 100 4h2V4z" clip-rule="evenodd"/>
-        </svg>
-        <span class="ml-2 font-semibold whitespace-nowrap">Open in Figma</span>
-      </a>
-      <!-- figma button end -->
-
-      <!-- github button start -->
-      <a href="https://github.com/halfmage/majesticons" target="_blank" class="inline-flex flex-1 my-2 items-center justify-center px-3 py-2 transition-colors cursor-pointer rounded bg-primary-200 text-primary-900 hover:bg-primary-100 mx-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6">
-          <path fill="currentColor" fill-rule="evenodd" d="M4.4 2A1 1 0 003 3v3.5c-.6 1-1 2.2-1 3.5 0 1.8.8 3.3 2 4.3 1 .8 2.1 1.4 3.4 1.9l-.4.4c-.5.5-.8 1-1 1.7l-.4.1-.1-.2-.2-.3a31 31 0 00-.4-.7c-.4-.5-.9-1-1.7-1.2a1 1 0 10-.4 2c.2 0 .3.1.4.3l.3.4v.1l.3.5c.2.4.6.9 1.4 1 .2.1.5.1.8 0v.7a1 1 0 102 0v-2c0-.4.1-.7.4-1l1.3-1.3c.3-.2.3-.6.3-.9a1 1 0 00-.7-1.2c-1.7-.4-3-1-4-1.8A3.5 3.5 0 014 10c0-1 .3-1.8.8-2.7l.2-.5V4.5l1.6.6h.9a9.9 9.9 0 019 0h.9l1.6-.6v2.3c0 .2 0 .4.2.5.5.9.8 1.8.8 2.7 0 1.2-.5 2-1.3 2.8-1 .8-2.3 1.4-4 1.8a1 1 0 00-.7 1.2c0 .3 0 .7.3 1l.8.7c.6.6.9 1.4.9 2.2V21a1 1 0 102 0v-1.3a5 5 0 00-1.4-3.5c1.3-.5 2.4-1 3.4-1.9 1.2-1 2-2.5 2-4.3 0-1.3-.4-2.5-1-3.5V3a1 1 0 00-1.4-1L17 3A12 12 0 007 3L4.4 2z" clip-rule="evenodd"/>
-        </svg>
-        <span class="ml-2 font-semibold whitespace-nowrap">Open on Github</span>
-      </a>
-      <!-- github button end -->
-
-    </div>
+    <!-- github button start -->
+    <a href="https://github.com/halfmage/majesticons" target="_blank" class="inline-flex flex-1 my-2 items-center justify-center px-3 py-2 transition-colors cursor-pointer rounded border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 hover:border-gray-400 mx-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6">
+        <path fill="currentColor" fill-rule="evenodd" d="M4.4 2A1 1 0 003 3v3.5c-.6 1-1 2.2-1 3.5 0 1.8.8 3.3 2 4.3 1 .8 2.1 1.4 3.4 1.9l-.4.4c-.5.5-.8 1-1 1.7l-.4.1-.1-.2-.2-.3a31 31 0 00-.4-.7c-.4-.5-.9-1-1.7-1.2a1 1 0 10-.4 2c.2 0 .3.1.4.3l.3.4v.1l.3.5c.2.4.6.9 1.4 1 .2.1.5.1.8 0v.7a1 1 0 102 0v-2c0-.4.1-.7.4-1l1.3-1.3c.3-.2.3-.6.3-.9a1 1 0 00-.7-1.2c-1.7-.4-3-1-4-1.8A3.5 3.5 0 014 10c0-1 .3-1.8.8-2.7l.2-.5V4.5l1.6.6h.9a9.9 9.9 0 019 0h.9l1.6-.6v2.3c0 .2 0 .4.2.5.5.9.8 1.8.8 2.7 0 1.2-.5 2-1.3 2.8-1 .8-2.3 1.4-4 1.8a1 1 0 00-.7 1.2c0 .3 0 .7.3 1l.8.7c.6.6.9 1.4.9 2.2V21a1 1 0 102 0v-1.3a5 5 0 00-1.4-3.5c1.3-.5 2.4-1 3.4-1.9 1.2-1 2-2.5 2-4.3 0-1.3-.4-2.5-1-3.5V3a1 1 0 00-1.4-1L17 3A12 12 0 007 3L4.4 2z" clip-rule="evenodd"/>
+      </svg>
+      <span class="ml-2 font-semibold whitespace-nowrap">Open on Github</span>
+    </a>
+    <!-- github button end -->
   </div>
+
 </div>

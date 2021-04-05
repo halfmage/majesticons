@@ -6,27 +6,3 @@ html.light .theme-sun,
 html.dark .theme-moon {
   display: none;
 }
-
-.icon-wrapper {
-  @apply grid gap-1 md:gap-4 text-center text-xs leading-4 col-start-1 row-start-2 text-primary-700 dark:text-primary-200;
-}
-
-.icon-container {
-  @apply relative bg-white dark:bg-primary-800 inline-flex rounded-lg flex-col items-center group py-4 px-4;
-}
-
-.icon {
-  @apply w-12 h-12;
-}
-
-.icon-code {
-  @apply sr-only;
-}
-
-.icon-name {
-  @apply truncate text-primary-500 w-full;
-}
-
-.icon-copy-trigger {
-  @apply opacity-0 bg-secondary-400 hover:bg-secondary-300 text-primary-900 absolute bottom-3 py-2 px-4 font-bold rounded-full cursor-pointer;
-}

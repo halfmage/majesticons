@@ -1,4 +1,4 @@
-const { white } = require("tailwindcss/colors");
+const { white, coolGray, black, trueGray } = require("tailwindcss/colors");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -12,8 +12,13 @@ module.exports = {
   theme: {
     colors: {
       white: white,
-      primary: colors.coolGray,
-      secondary: colors.yellow,
+      black: black,
+      gray: trueGray,
+      primary: colors.red,
+      secondary: colors.green,
+    },
+    fontFamily: {
+      sans: ["Manrope", "sans-serif"],
     },
     extend: {
       typography(theme) {

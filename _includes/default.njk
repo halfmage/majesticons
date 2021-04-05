@@ -11,8 +11,10 @@
     {% include "meta.njk" %}
     <link rel="stylesheet" href="/style.css?v={% version %}" />
     <script src="/js/alpine.js?v={% version %}"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
   </head>
-  <body class="font-sans bg-primary-100 dark:bg-primary-900">
+  <body class="font-sans bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50">
     {% include "header.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}
