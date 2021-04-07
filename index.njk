@@ -24,19 +24,23 @@ layout: default
 </script>
     <div class="container mx-auto px-4" x-data="loadIconData()">
 
-    <div class="flex mb-4 ">
-      <input x-ref="searchField" x-model="search" x-on:keydown.window.prevent.slash="$refs.searchField.focus()" placeholder="Search for icons" type="search" class="block w-full border border-gray-300 focus:outline-none bg-gray-100 dark:bg-gray-800 focus:bg-white dark:focus:bg-gray-700 focus:shadow text-gray-700 rounded-lg px-4 py-3 mr-2" />
-      <button onclick="toggleDefaultTheme()" class="theme-sun bg-white text-black px-4 py-3 flex-shrink-0 rounded-lg">Light Mode</button>
-      <button onclick="toggleSecondTheme()" class="theme-moon bg-black text-white px-4 py-3 flex-shrink-0 rounded-lg">Dark Mode</button>
+    <div class="flex mb-4">
+      <input
+      x-ref="searchField"
+      x-model="search"
+      x-on:keydown.window.prevent.slash="$refs.searchField.focus()"
+      placeholder="Search for icon names e.g. 'cloud-code, book-music or textbox-clock'"
+      type="search"
+      class="block w-full bg-white shadow rounded px-4 py-3 dark:bg-gray-800" />
     </div>
 
-        <div class="grid gap-1" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))">
+        <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))">
           <template x-for="item in filteredIcons" :key="item">
-            <div class="relative inline-flex flex-col items-center group py-4 px-2 text-sm">
-              <div class="w-6 h-6" x-html="item.source"></div>
-              <div class="truncate w-full mt-2" x-text="item.namePlain"></div>
+            <div class="relative inline-flex flex-col items-center group py-4 px-2 text-sm bg-white shadow rounded dark:bg-gray-800">
+              <div class="w-6 h-6 my-6" x-html="item.source"></div>
+              <div class="truncate w-full mt-2 text-xs text-gray-600 dark:text-gray-400" x-text="item.namePlain"></div>
               <div class="sr-only" x-bind:id="item.namePlain" x-text="item.source"></div>
-              <div x-bind:data-clipboard-target="'#' + item.namePlain" class="icon-copy-trigger hover:underline cursor-pointer font-bold transition-opacity group-hover:opacity-100 opacity-0 ">Copy SVG</div>
+              <!-- <div x-bind:data-clipboard-target="'#' + item.namePlain" class="icon-copy-trigger hover:underline cursor-pointer font-bold transition-opacity group-hover:opacity-100 opacity-0 ">Copy SVG</div> -->
             </div>
           </template>
         </div>

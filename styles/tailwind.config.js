@@ -14,11 +14,8 @@ module.exports = {
       white: white,
       black: black,
       gray: trueGray,
-      primary: colors.red,
+      primary: colors.emerald,
       secondary: colors.green,
-    },
-    fontFamily: {
-      sans: ["Manrope", "sans-serif"],
     },
     extend: {
       typography(theme) {
