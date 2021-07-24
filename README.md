@@ -7,14 +7,15 @@
 <p>
 
 <p align="center">
-    <a href="https://github.com/halfmage/majesticons"><img src="https://img.shields.io/npm/v/majesticons" alt="Latest Release"></a>
+    <a href="https://www.npmjs.com/package/majesticons"><img src="https://img.shields.io/npm/v/majesticons" alt="Latest Release"></a>
     <a href="https://github.com/halfmage/majesticons/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/majesticons.svg" alt="License"></a>
     <a href="https://github.com/halfmage/majesticons/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/halfmage/majesticons"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.figma.com/community/file/937658831428627854/Majesticons"><strong>Figma community file &rarr;</strong></a> | 
-  <a href="https://github.com/halfmage/majesticons/tree/main/icons"><strong>Browse all icons &rarr;</strong></a>
+  <a href="https://www.majesticons.com/"><strong>majesticons.com</strong></a> &bull;
+  <a href="https://www.figma.com/community/file/937658831428627854/Majesticons"><strong>Figma community file</strong></a> &bull;
+  <a href="https://github.com/halfmage/majesticons/tree/main/icons"><strong>Browse all icons </strong></a>
 </p>
 
 ---
