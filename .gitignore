@@ -1,6 +1,8 @@
 # specific
 index.html
 .DS_Store
+_site/
+_tmp/
 
 # Logs
 logs
