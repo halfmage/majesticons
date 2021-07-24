@@ -1,24 +1,25 @@
-# Majesticons V2
+<p align="center">
+  <img src="https://raw.githubusercontent.com/halfmage/majesticons/main/cover.png" alt="Majesticons">
+</p>
 
-> **Second version of majesticons will introduce a lot more icons and many variants of icons from the current set!**
+<p align="center">
+  Majesticons - A high-quality SVG iconset that you can use for your web projects, your application, or print them to hang them on your wall! MIT-licensed
+<p>
 
-A versatile, beautiful, and scalable iconset. 210 icons each inline and solid.
+<p align="center">
+    <a href="https://github.com/halfmage/majesticons"><img src="https://img.shields.io/npm/v/majesticons" alt="Latest Release"></a>
+    <a href="https://github.com/halfmage/majesticons/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/majesticons.svg" alt="License"></a>
+    <a href="https://github.com/halfmage/majesticons/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/halfmage/majesticons"></a>
+</p>
 
-Majesticons is a high-quality SVG iconset that you can use for your web projects, your application, or print them to hang them on your wall! All icons of this set are MIT-licensed and reusable as you like
-
-## **🎨 Design**: [Majesticons Community Figma File](https://www.figma.com/community/file/937658831428627854/Majesticons)
-
-## **📚 SVG Code**: [Majesticons SVG Icons Github](https://github.com/halfmage/majesticons/tree/main/icons)
+<p align="center">
+  <a href="https://www.figma.com/community/file/937658831428627854/Majesticons"><strong>Figma community file &rarr;</strong></a> | 
+  <a href="https://github.com/halfmage/majesticons/tree/main/icons"><strong>Browse all icons &rarr;</strong></a>
+</p>
 
 ---
 
-## Preview (line and solid style)
-
-![Preview of all icons](https://github.com/halfmage/majesticons/blob/main/preview-both.png)
-
-## Some facts for you
-
-All icons are ...
+## Some facts for you: All icons are ...
 
 - designed to be used in a variety of topics
 - made with a basic 24x24 pixel grid
@@ -31,18 +32,16 @@ To use these icons in your project, simply copy and paste the SVG sourcecode in 
 
 ```html
 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M7 8h10M7 12h5m4.8..." // vector path stroke="currentColor" // easy
-  coloring with css color stroke-width="2" // default stroke width
-  stroke-linecap="round" // default line cap stroke-linejoin="round" // default
-  line join />
+  <path
+    d="M7 8h10M7 12h5m4.8..."
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 </svg>
 ```
 
 # Contribute
 
 Let me know if you use majesticons, I would like to prepare a showcase section on the website! If you run in any errors or have suggestion, please let me know via email or create a github issue 👋
-
-## Informations
-
-This repository is hosting the website build with Eleventy, Tailwind CSS, and AlpineJS. Everything is hosted on netlify so let's smash this badge in here:
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aec52f18-7886-4307-aa1e-cde16042aebb/deploy-status)](https://app.netlify.com/sites/majesticons/deploys)
