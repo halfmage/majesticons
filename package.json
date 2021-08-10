@@ -1,6 +1,6 @@
 {
   "name": "majesticons",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A versitile, beautiful and scalable iconset. 210 icons each in line and solid.",
   "main": "index.js",
   "scripts": {
