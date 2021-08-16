@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halfmage/majesticons/main/cover.png" alt="Majesticons">
+  <img src="https://www.majesticons.com/images/social.png" alt="Majesticons">
 </p>
 
 <p align="center">
