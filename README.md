@@ -15,7 +15,7 @@
 <p align="center">
   <a href="https://www.majesticons.com/"><strong>majesticons.com</strong></a> &bull;
   <a href="https://www.figma.com/community/file/937658831428627854/Majesticons"><strong>Figma community file</strong></a> &bull;
-  <a href="https://www.majesticons.com/icons/"><strong>Browse free icons</strong></a>
+  <a href="https://www.majesticons.com/"><strong>Browse free icons</strong></a> &bull;
   <a href="https://gum.co/majesticons"><strong>Get 3000+ icons</strong></a>
 </p>
 
