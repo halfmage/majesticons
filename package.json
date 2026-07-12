@@ -1,7 +1,7 @@
 {
   "name": "majesticons",
   "version": "2.1.2",
-  "description": "A versitile, beautiful and scalable iconset. 210 icons each in line and solid.",
+  "description": "A versatile, beautiful and scalable iconset. 380 icons each in line and solid style, MIT-licensed. 11,000+ icons at majesticons.com.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
@@ -12,15 +12,21 @@
   },
   "keywords": [
     "icons",
+    "icon-set",
     "vector",
-    "svg"
+    "svg",
+    "svg-icons",
+    "line-icons",
+    "solid-icons",
+    "ui-icons",
+    "figma-icons"
   ],
   "author": "Gerrit Halfmann",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/halfmage/majesticons/issues"
   },
-  "homepage": "https://github.com/halfmage/majesticons#readme",
+  "homepage": "https://majesticons.com",
   "devDependencies": {
     "np": "^6.5.0"
   }
