@@ -65,3 +65,7 @@ typings/
 
 # next.js build output
 .next
+
+# Agent stuff
+CLAUDE.md
+AGENTS.md
